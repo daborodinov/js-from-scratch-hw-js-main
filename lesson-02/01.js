@@ -22,6 +22,7 @@ let isAccess
 if ((isAdmin || isVerifiedUser) &&
      (hasSpecialPermission || hasTemporaryPass)) {
     isAccess = true
-} 
+} else {
+    isAccess = false
+}
 
-console.log(isAccess)
